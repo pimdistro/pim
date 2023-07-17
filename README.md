@@ -6,6 +6,8 @@
 <br>
 > pim (short for "pretty vim"), derived from the Dutch name [Pim](https://nameberry.com/babyname/pim/boy) 
 
+---
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/pimdistro/pim/main/.assets/screenshot-01.png" alt="pim logo">
 </p>
