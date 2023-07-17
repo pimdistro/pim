@@ -42,6 +42,12 @@ end
 
 -- Assign key bindings to the 'val.bindings' table
 val.bindings = {
+  i = {
+    ["<C-h>"] = { "<C-w>h", "Window left" },
+    ["<C-j>"] = { "<C-w>j", "Window down" },
+    ["<C-l>"] = { "<C-w>l", "Window right" },
+    ["<C-k>"] = { "<C-w>k", "Window up" },
+  },
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
     ["<F2>"] = rename_mapping,
@@ -52,6 +58,12 @@ val.bindings = {
     ["<leader>?"] = { comment("blockwise") },
     ["<leader>ln"] = { "<cmd>set nu!<cr>" },
     ["<F3>"] = { "<cmd>LspLinesToggle<cr>", "Toggle the fancy error lines", noremap },
+
+    -- buffer switching
+    ["<C-h>"] = { "<C-w>h", "Window left" },
+    ["<C-j>"] = { "<C-w>j", "Window down" },
+    ["<C-l>"] = { "<C-w>l", "Window right" },
+    ["<C-k>"] = { "<C-w>k", "Window up" },
   },
   v = {
     ["<leader>r"] = rename_mapping,
