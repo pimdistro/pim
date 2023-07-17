@@ -1,8 +1,28 @@
 require("lazy").setup({
-  -- onedark
+  {
+    "folke/neodev.nvim",
+    config = function()
+      require("neodev").setup()
+    end,
+  },
+
+  "folke/which-key.nvim",
+  { "folke/neoconf.nvim", cmd = "Neoconf" },
+
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
+
+  {
+    "numToStr/Comment.nvim",
+    config = function()
+      require("Comment").setup()
+    end,
+  },
+
   {
     "B4mbus/oxocarbon-lua.nvim",
-    -- "navarasu/onedark.nvim",
     config = function()
       vim.cmd.colorscheme 'oxocarbon-lua'
     end,
@@ -31,6 +51,12 @@ require("lazy").setup({
     end,
   },
   "nvim-tree/nvim-web-devicons",
+
+  -- nvim-treesitter
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate"
+  },
 
   -- Portable package manager for Neovim that runs everywhere Neovim runs.
   -- Easily install and manage LSP servers, DAP servers, linters, and formatters.
@@ -78,8 +104,4 @@ require("lazy").setup({
       require("renamer").setup()
     end,
   },
-
-  -- which-key
-  "folke/which-key.nvim",
-  { "folke/neoconf.nvim", cmd = "Neoconf" },
 })

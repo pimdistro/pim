@@ -16,6 +16,9 @@ lspconfig.lua_ls.setup {
   on_attach = require("lsp-format").on_attach,
   settings = {
     Lua = {
+      completion = {
+        callSnippet = "Replace"
+      },
       runtime = {
         -- Specify the version of Lua being used (e.g., LuaJIT)
         version = 'LuaJIT',
@@ -37,11 +40,6 @@ lspconfig.lua_ls.setup {
       },
     },
   },
-}
-
-val.capabilities = vim.lsp.protocol.make_client_capabilities()
-val.capabilities.textDocument.completion.completionItem = {
-  documentationFormat = { "markdown", "plaintext" },
 }
 
 -- Return the 'val' table as the module value
