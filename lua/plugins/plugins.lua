@@ -1,11 +1,4 @@
 require("lazy").setup({
-  {
-    "folke/neodev.nvim",
-    config = function()
-      require("neodev").setup()
-    end,
-  },
-
   "folke/which-key.nvim",
   { "folke/neoconf.nvim", cmd = "Neoconf" },
 
@@ -23,27 +16,10 @@ require("lazy").setup({
     end,
   },
 
-  -- nvterm
-  {
-    "vimlab/split-term.vim",
-    config = function()
-      vim.cmd("set splitbelow")
-    end,
-  },
-
-  -- nvim-tree (https://github.com/nvim-tree/nvim-tree.lua)
-  {
-    "nvim-tree/nvim-tree.lua",
-    config = function()
-      require("nvim-tree").setup()
-    end,
-  },
-  "nvim-tree/nvim-web-devicons",
-
   -- nvim-treesitter
   {
     "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate"
+    build = ":TSUpdate",
   },
 
   -- Portable package manager for Neovim that runs everywhere Neovim runs.
@@ -63,30 +39,8 @@ require("lazy").setup({
   },
   "neovim/nvim-lspconfig",
 
-  {
-    "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
-    config = function()
-      require("lsp_lines").setup({
-        virtual_lines = false,
-      })
-
-      vim.diagnostic.config({
-        virtual_text = false,
-      })
-    end,
-  },
-
-
-
   "lukas-reineke/lsp-format.nvim",
   "nvim-lua/plenary.nvim",
-
-  {
-    "filipdutescu/renamer.nvim",
-    config = function()
-      require("renamer").setup()
-    end,
-  },
 
   require("plugins.config.bar"),
   require("plugins.config.null_ls"),

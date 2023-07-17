@@ -1,4 +1,3 @@
-local binding = require("bindings").bindings
 local val = {}
 
 -- Load configuration and set up keybindings and Language Server Protocol (LSP) servers
@@ -10,6 +9,7 @@ local val = {}
 val.load_config = function()
   local lspconfig = require("lspconfig")
   local servers = require("custom.lsp").servers
+  local binding = require("bindings").bindings
 
   -- Load keybindings from bindings.lua and apply them to respective modes
   for mode, mode_bindings in pairs(binding) do
@@ -18,12 +18,18 @@ val.load_config = function()
 
   -- Configure LSP servers
   for _, server in ipairs(servers) do
-    local capabilities = require('cmp_nvim_lsp').default_capabilities()
+    local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
     lspconfig[server].setup({
       on_attach = require("lsp-format").on_attach,
-      capabilities = capabilities
+      capabilities = capabilities,
     })
+  end
+end
+
+val.map_keybindings_deferred = function(binding)
+  for mode, mode_bindings in pairs(binding) do
+    val.map_keybindings(mode, mode_bindings)
   end
 end
 
@@ -55,16 +61,16 @@ end
 
 val.generate_files = function(url)
   if not vim.api.nvim_get_runtime_file("lua/custom/init.lua", false)[1] then
-    local path = vim.fn.stdpath "config" .. "/lua/custom/"
+    local path = vim.fn.stdpath("config") .. "/lua/custom/"
     local input = "y"
 
     if next(vim.api.nvim_list_uis()) then
-      input = vim.fn.input "Do you want to install example custom config? (Y/n): "
+      input = vim.fn.input("Do you want to install example custom config? (Y/n): ")
     end
 
     if input == "y" then
       print("\nCloning default configuration...")
-      vim.fn.system { "git", "clone", "--depth", "1", url, path }
+      vim.fn.system({ "git", "clone", "--depth", "1", url, path })
       vim.fn.delete(path .. ".git", "rf")
       print("Cloned! Enjoy pim")
     end

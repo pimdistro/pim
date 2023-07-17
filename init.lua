@@ -14,7 +14,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 
-local path = vim.fn.stdpath "config" .. "/lua/custom/init.lua"
+local path = vim.fn.stdpath("config") .. "/lua/custom/init.lua"
 local util = require("util")
 
 if not vim.loop.fs_stat(path) then
