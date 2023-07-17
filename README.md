@@ -5,6 +5,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/therealnv6/pim/main/.assets/screenshot-01.png" alt="pim logo">
 </p>
+
 > font is [monoid Nerd Font](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Monoid)
 
 ---
