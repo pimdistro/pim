@@ -32,6 +32,10 @@ But wait, there's more! Check out these additional features of pim:
 - Easy navigation with [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua): Access your file tree and navigate through your project effortlessly.
 - Beautiful and informative status line with [lualine](https://github.com/hoob3rt/lualine.nvim): Customize your status line with various themes and useful information.
 
+# Useful Links
+
+- [bindings](https://github.com/therealnv6/pim/wiki/bindings)
+
 # Bindings 
 
 | Mode | Keybinding    | Command/Action                                  | Description                              |
