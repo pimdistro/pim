@@ -7,6 +7,7 @@ local lspconfig = require('lspconfig')
 -- Specify the language servers to be used, that don't need configuration
 val.servers = {
   "clangd",
+  "marksman"
 }
 
 -- Setup the configuration for 'lua_ls' language server
@@ -36,6 +37,11 @@ lspconfig.lua_ls.setup {
       },
     },
   },
+}
+
+val.capabilities = vim.lsp.protocol.make_client_capabilities()
+val.capabilities.textDocument.completion.completionItem = {
+  documentationFormat = { "markdown", "plaintext" },
 }
 
 -- Return the 'val' table as the module value
