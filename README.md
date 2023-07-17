@@ -3,7 +3,7 @@
 > pim (short for "pretty vim"), derived from the Dutch name [Pim](https://nameberry.com/babyname/pim/boy) 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/therealnv6/pim/.assets/screenshot-01.png" alt="pim logo">
+  <img src="https://raw.githubusercontent.com/therealnv6/pim/main/.assets/screenshot-01.png" alt="pim logo">
 </p>
 
 pim was my personal answer to the question of my personal preferences; minimalism or ease of us. Why not both? 
