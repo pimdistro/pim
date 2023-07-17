@@ -1,9 +1,13 @@
 # pim - A Sensible Neovim Config
 
+<img src="https://raw.githubusercontent.com/pimdistro/pim/main/.assets/pim.png" 
+    width="50%" 
+    align="right">
+<br>
 > pim (short for "pretty vim"), derived from the Dutch name [Pim](https://nameberry.com/babyname/pim/boy) 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/therealnv6/pim/main/.assets/screenshot-01.png" alt="pim logo">
+  <img src="https://raw.githubusercontent.com/pimdistro/pim/main/.assets/screenshot-01.png" alt="pim logo">
 </p>
 
 > font is [monoid Nerd Font](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Monoid)
@@ -52,3 +56,14 @@ But wait, there's more! Check out these additional features of pim:
 ## License
 
 This project is licensed under the [MIT License](https://github.com/therealnv6/pim/blob/main/LICENSE).
+
+# Credits
+
+- Much of this was inspired by [nyoom.nvim](https://github.com/nyoom-engineering/nyoom.nvim), go check them out!
+- [folke](https://github.com/folke) for:
+    - lazy.nvim
+    - which-key
+    - todo-comments
+    - neodev
+- ... more to add
+

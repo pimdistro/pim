@@ -63,7 +63,7 @@ val.generate_files = function(url)
     end
 
     if input == "y" then
-      print("Cloning default configuration...")
+      print("\nCloning default configuration...")
       vim.fn.system { "git", "clone", "--depth", "1", url, path }
       vim.fn.delete(path .. ".git", "rf")
       print("Cloned! Enjoy pim")
