@@ -1,0 +1,19 @@
+{
+    "workspace.library": [
+        "/home/riven/.config/nvim",
+        "/home/riven/.local/share/nvim/lazy/lazy.nvim",
+        "/home/riven/.local/share/nvim/lazy/mason-lspconfig.nvim",
+        "/home/riven/.local/share/nvim/lazy/oxocarbon-lua.nvim",
+        "/home/riven/.local/share/nvim/lazy/nvim-lspconfig",
+        "/home/riven/.local/share/nvim/lazy/nvim-web-devicons",
+        "/home/riven/.local/share/nvim/lazy/nvim-tree.lua",
+        "/home/riven/.local/share/nvim/lazy/mason.nvim",
+        "/home/riven/.local/share/nvim/lazy/lsp_lines.nvim",
+        "/home/riven/.local/share/nvim/lazy/which-key.nvim",
+        "/usr/share/nvim/runtime",
+        "/usr/share/nvim/runtime/pack/dist/opt/matchit",
+        "/usr/lib/nvim",
+        "/home/riven/.local/state/nvim/lazy/readme",
+        "${3rd}/luassert/library"
+    ]
+}
