@@ -89,14 +89,6 @@ require("lazy").setup({
     end,
   },
 
-  {
-    "declancm/cinnamon.nvim",
-    config = function()
-      require("cinnamon").setup()
-    end,
-  },
-
-
   require("plugins.config.bar"),
   require("plugins.config.null_ls"),
   require("plugins.config.cmp"),
