@@ -24,14 +24,6 @@ We are opinionated; but we give you all the control you need. It's always possib
 - Utilizes lazy loading with [lazy.nvim](https://github.com/folke/lazy.nvim) for faster startup times
 - Integrated Language Server Protocol (LSP) support using [lspconfig](https://github.com/neovim/nvim-lspconfig)
 
-And there's even more! Here are some additional features of pim:
-
-- Sensible defaults: pim comes with carefully selected default configurations to enhance your editing experience out of the box.
-- Extensibility: Customize pim according to your preferences using its modular architecture. Add or remove plugins, keybindings, and settings.
-- Plugin management with [mason](https://github.com/therealnv6/mason): Easily manage your plugins and keep them up to date with the help of mason.
-- Easy navigation with [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua): Access your file tree and navigate through your project effortlessly.
-- Beautiful and informative status line with [lualine](https://github.com/hoob3rt/lualine.nvim): Customize your status line with various themes and useful information.
-
 # Keybindigns
 
 | Mode | Keybinding    | Command/Action                                  | Description                              |
@@ -44,6 +36,16 @@ And there's even more! Here are some additional features of pim:
 | n    | \<F3>         | \<cmd>LspLinesToggle\<cr>                       | Toggle the fancy error lines             |
 | v    | \<leader>r    | lua require("renamer").rename()                 | Rename                                   |
 | v    | \<F3>         | lua require("lsp_lines").toggle()               | Toggle LSP lines                         |
+
+## Installation
+
+> Not finished.
+
+
+## Usage
+
+- Launch Neovim: `nvim`
+- Enjoy the improved Neovim experience with pim's sensible defaults and enhanced features.
 
 ## Contributing
  
