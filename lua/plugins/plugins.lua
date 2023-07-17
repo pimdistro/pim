@@ -43,7 +43,6 @@ require("lazy").setup({
   "nvim-lua/plenary.nvim",
 
   require("plugins.config.bar"),
-  require("plugins.config.null_ls"),
   require("plugins.config.cmp"),
   require("custom.theme"),
   require("custom.plugins"),
