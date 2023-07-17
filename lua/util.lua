@@ -1,8 +1,4 @@
 local binding = require("bindings").bindings
-local servers = require("lsp").servers
-
-local lspconfig = require("lspconfig")
-
 local val = {}
 
 -- Load configuration and set up keybindings and Language Server Protocol (LSP) servers
@@ -12,6 +8,9 @@ local val = {}
 -- It also sets up the LSP servers specified in the `servers` array.
 --
 val.load_config = function()
+  local lspconfig = require("lspconfig")
+  local servers = require("custom.lsp").servers
+
   -- Load keybindings from bindings.lua and apply them to respective modes
   for mode, mode_bindings in pairs(binding) do
     val.map_keybindings(mode, mode_bindings)
@@ -51,6 +50,23 @@ val.map_keybindings = function(mode, bindings)
 
     -- Set the keybinding for the specified mode
     vim.keymap.set(mode, mapping_args[1], mapping_args[2], opts)
+  end
+end
+
+val.generate_files = function(url)
+  if not vim.api.nvim_get_runtime_file("lua/custom/init.lua", false)[1] then
+    local path = vim.fn.stdpath "config" .. "/lua/custom/"
+    local input = "y"
+
+    if next(vim.api.nvim_list_uis()) then
+      input = vim.fn.input "Do you want to install example custom config? (Y/n): "
+    end
+
+    if input == "y" then
+      val.echo "Cloning example custom config repo ..."
+      vim.fn.system { "git", "clone", "--depth", "1", url, path }
+      vim.fn.delete(path .. ".git", "rf")
+    end
   end
 end
 

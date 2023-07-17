@@ -14,10 +14,17 @@ end
 vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 
+local path = vim.fn.stdpath "config" .. "/lua/custom/init.lua"
+local util = require("util")
+
+if not vim.loop.fs_stat(path) then
+  util.generate_files("https://github.com/pimdistro/default")
+end
+
 -- here we will include the plugins directory, so we can actually initialize the plugins
 require("plugins.plugins")
 require("options")
 
 -- call this as last to ensure everything is loaded.
 -- probably not required for most things, but just in case.
-require("util").load_config()
+util.load_config()
