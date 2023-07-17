@@ -14,7 +14,7 @@ After all, the end goal of pim is to be used as a base framework, to be further 
 pim is designed to be fast and extensive; thus the following design principles were applied:
 
 - **Speed**: I made sure pim runs lightning fast, with a startup time aiming to be under ±60.0 ms 
-(±48.0 since https://github.com/therealnv6/pim/commit/0ae530aa58d31f7db7c97578c6d9c3c27b6b59d4). As a developer myself, 
+(±48.0 since [0ae530a](https://github.com/therealnv6/pim/commit/0ae530aa58d31f7db7c97578c6d9c3c27b6b59d4)). As a developer myself, 
 I understand the frustration of working with sluggish code editors.
 - **Modularity**: pim is all about being modular and flexible. While I have my own opinions, 
 I want you to have full control. You can easily overwrite my defaults and tailor pim to your liking. Take a look at [configuring.md](https://egirldev.gay)
