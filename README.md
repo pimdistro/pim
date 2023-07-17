@@ -1,8 +1,6 @@
 # 🌿 pim - A Sensible Neovim Config
 
-<img src="https://raw.githubusercontent.com/pimdistro/pim/main/.assets/pim.png" 
-    width="50%" align="right" style="margin-bottom: 25px">
-<br>
+![pim.png](https://raw.githubusercontent.com/pimdistro/pim/main/.assets/pim.png)
 
 > pim (short for "pretty vim"), derived from the Dutch name
 > [Pim](https://nameberry.com/babyname/pim/boy)
