@@ -13,10 +13,10 @@ After all, the end goal of pim is to be used as a base framework, to be further 
 
 pim is designed to be fast and extensive; thus the following design principles were applied:
 
-- **Speed**. It runs incredibly fast; startup time aiming to be under ±40.0 ms. As a developer, 
-I understand the frustrating experiences of **slow** code editors.
-- **Modularity**. We aim to be completely modular, to not get in your way. 
-We are opinionated; but we give you all the control you need. It's always possible to overwrite our defaults.
+- **Speed**: I made sure pim runs lightning fast, with a startup time aiming to be under ±40.0 ms. As a developer myself, 
+I understand the frustration of working with sluggish code editors.
+- **Modularity**: pim is all about being modular and flexible. While I have my own opinions, 
+I want you to have full control. You can easily overwrite my defaults and tailor pim to your liking. Take a look at [configuring.md](https://egirldev.gay)
 
 ## Features
 
@@ -24,15 +24,15 @@ We are opinionated; but we give you all the control you need. It's always possib
 - Utilizes lazy loading with [lazy.nvim](https://github.com/folke/lazy.nvim) for faster startup times
 - Integrated Language Server Protocol (LSP) support using [lspconfig](https://github.com/neovim/nvim-lspconfig)
 
-And there's even more! Here are some additional features of pim:
+But wait, there's more! Check out these additional features of pim:
 
 - Sensible defaults: pim comes with carefully selected default configurations to enhance your editing experience out of the box.
-- Extensibility: Customize pim according to your preferences using its modular architecture. Add or remove plugins, keybindings, and settings.
+- Extensibility: You can customize pim according to your preferences thanks to its modular architecture. Add or remove plugins, keybindings, and settings as you please.
 - Plugin management with [mason](https://github.com/therealnv6/mason): Easily manage your plugins and keep them up to date with the help of mason.
 - Easy navigation with [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua): Access your file tree and navigate through your project effortlessly.
 - Beautiful and informative status line with [lualine](https://github.com/hoob3rt/lualine.nvim): Customize your status line with various themes and useful information.
 
-# Keybindigns
+# Bindings 
 
 | Mode | Keybinding    | Command/Action                                  | Description                              |
 |------|---------------|-------------------------------------------------|------------------------------------------|
