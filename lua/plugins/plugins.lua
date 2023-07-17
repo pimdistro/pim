@@ -14,7 +14,6 @@ require("lazy").setup({
     dependencies = { "nvim-lua/plenary.nvim" },
   },
 
-  "numToStr/Comment.nvim",
   "SmiteshP/nvim-navic",
 
   {
@@ -92,5 +91,6 @@ require("lazy").setup({
   require("plugins.config.bar"),
   require("plugins.config.null_ls"),
   require("plugins.config.cmp"),
-  require("plugins.config.theme")
+  require("custom.theme"),
+  require("custom.plugins"),
 })
