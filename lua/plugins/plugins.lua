@@ -64,13 +64,6 @@ require("lazy").setup({
 
   "numToStr/Comment.nvim",
 
-  {
-    "B4mbus/oxocarbon-lua.nvim",
-    config = function()
-      vim.cmd.colorscheme 'oxocarbon-lua'
-    end,
-  },
-
   "SmiteshP/nvim-navic",
   {
     "utilyre/barbecue.nvim",
@@ -165,5 +158,8 @@ require("lazy").setup({
     config = function()
       require("cinnamon").setup()
     end,
-  }
+  },
+
+
+  require("plugins.config.theme")
 })
