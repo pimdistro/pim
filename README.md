@@ -1,10 +1,10 @@
 # pim - A Sensible Neovim Config
 
+> pim (short for "pretty vim"), derived from the Dutch name [Pim](https://nameberry.com/babyname/pim/boy) 
+
 <p align="center">
   <img src="https://github.com/therealnv6/pim/blob/main/pim_logo.png" alt="pim logo">
 </p>
-
-> pim (short for "pretty vim"), derived from the Dutch name [Pim](https://nameberry.com/babyname/pim/boy) 
 
 pim was my personal answer to the question of my personal preferences; minimalism or ease of us. Why not both? 
 pim makes it easy to make amazing Neovim using experiences, without sacrificing performance, mainly because
