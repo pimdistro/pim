@@ -63,7 +63,6 @@ val.generate_files = function(url)
     end
 
     if input == "y" then
-      val.echo "Cloning example custom config repo ..."
       vim.fn.system { "git", "clone", "--depth", "1", url, path }
       vim.fn.delete(path .. ".git", "rf")
     end
