@@ -44,6 +44,5 @@ require("lazy").setup({
 
   require("plugins.config.bar"),
   require("plugins.config.cmp"),
-  require("custom.theme"),
   require("custom.plugins"),
 })
