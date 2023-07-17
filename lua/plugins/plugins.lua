@@ -16,6 +16,7 @@ require("lazy").setup({
 	-- nvim-tree (https://github.com/nvim-tree/nvim-tree.lua)
 	{
 		"nvim-tree/nvim-tree.lua",
+		-- config taken from nvchad for a sensible default, lower priority but will be customized eventually.
 		config = function()
 			require("nvim-tree").setup({
 				disable_netrw = true,
