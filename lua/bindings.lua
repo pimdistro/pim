@@ -50,6 +50,7 @@ val.bindings = {
     ["<leader>h"] = { "<cmd>15Term<cr>" },
     ["<leader>/"] = { comment("linewise") },
     ["<leader>?"] = { comment("blockwise") },
+    ["<leader>ln"] = { "<cmd>set nu!<cr>" },
     ["<F3>"] = { "<cmd>LspLinesToggle<cr>", "Toggle the fancy error lines", noremap },
   },
   v = {

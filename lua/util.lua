@@ -19,8 +19,11 @@ val.load_config = function()
 
   -- Configure LSP servers
   for _, server in ipairs(servers) do
+    local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
     lspconfig[server].setup({
-      on_attach = require("lsp-format").on_attach
+      on_attach = require("lsp-format").on_attach,
+      capabilities = capabilities
     })
   end
 end
