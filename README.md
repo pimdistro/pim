@@ -1,4 +1,4 @@
-# pim - A Sensible Neovim Config
+# 🌿 pim - A Sensible Neovim Config
 
 <img src="https://raw.githubusercontent.com/pimdistro/pim/main/.assets/pim.png" 
     width="50%" align="right" style="margin-bottom: 25px">
@@ -18,19 +18,18 @@
 
 ---
 
-pim was my personal answer to the question of my personal preferences;
-minimalism or ease of us. Why not both? pim makes it easy to make amazing Neovim
-using experiences, without sacrificing performance, mainly because _everything_
-is lazily loaded, powered by the amazing
-[lazy.nvim](https://github.com/folke/lazy.nvim) package manager. After all, the
-end goal of pim is to be used as a base framework, to be further extended on by
-the end-user.
+Welcome to 🌿 pim, your minimalistic yet feature-packed Neovim setup! This
+config is all about giving you the best of both worlds - simplicity and
+usability. It leverages lazy loading with the fantastic 🚀 lazy.nvim package
+manager, ensuring that everything is snappy and efficient. Not to mention, you
+have the freedom to make it your own, as 🌿 pim serves as a flexible and
+extensible base framework.
 
 pim is designed to be fast and extensive; thus the following design principles
 were applied:
 
-- **Speed**: I made sure pim runs lightning fast, with a startup time aiming to
-  be under ±60.0 ms (±48.0 since
+- ⚡ **Speed**: I made sure pim runs lightning fast, with a startup time aiming
+  to be under ±60.0 ms (±48.0 since
   [0ae530a](https://github.com/therealnv6/pim/commit/0ae530aa58d31f7db7c97578c6d9c3c27b6b59d4)).
   As a developer myself, I understand the frustration of working with sluggish
   code editors.
@@ -66,7 +65,7 @@ But wait, there's more! Check out these additional features of pim:
 
 - [bindings](https://github.com/therealnv6/pim/wiki/bindings)
 
-## Contributing
+## Contributing 🤝
 
 ![GitHub Contributors Image](https://contrib.rocks/image?repo=therealnv6/pim)
 
@@ -75,12 +74,12 @@ But wait, there's more! Check out these additional features of pim:
 - Feel free to open [bug reports](issues) and/or [pull requests](/pulls).
 - Future requests are also always welcome under [issues](/issues)
 
-## License
+## License 📜
 
 This project is licensed under the
 [MIT License](https://github.com/therealnv6/pim/blob/main/LICENSE).
 
-# Credits
+# Credits 🙌
 
 - Much of this was inspired by
   [nyoom.nvim](https://github.com/nyoom-engineering/nyoom.nvim), go check them
@@ -91,3 +90,5 @@ This project is licensed under the
   - todo-comments
   - neodev
 - ... more to add
+
+We hope you enjoy using 🌿 pim! Happy coding! 🚀🌟
