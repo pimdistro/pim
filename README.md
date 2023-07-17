@@ -32,22 +32,9 @@ But wait, there's more! Check out these additional features of pim:
 - Easy navigation with [nvim-tree](https://github.com/kyazdani42/nvim-tree.lua): Access your file tree and navigate through your project effortlessly.
 - Beautiful and informative status line with [lualine](https://github.com/hoob3rt/lualine.nvim): Customize your status line with various themes and useful information.
 
-# Useful Links
+## Useful Links
 
 - [bindings](https://github.com/therealnv6/pim/wiki/bindings)
-
-# Bindings 
-
-| Mode | Keybinding    | Command/Action                                  | Description                              |
-|------|---------------|-------------------------------------------------|------------------------------------------|
-| n    | ;             | :                                               | Enter command mode                       |
-| n    | \<F2>         | lua require("renamer").rename()                 | Rename                                   |
-| n    | \<leader>r    | lua require("renamer").rename()                 | Rename                                   |
-| n    | \<leader>e    | \<cmd>NvimTreeFocus\<cr>                        | Focus on nvim-tree (NvimTreeFocus)       |
-| n    | \<leader>h    | \<cmd>15Term\<cr>                               | Open a terminal window                   |
-| n    | \<F3>         | \<cmd>LspLinesToggle\<cr>                       | Toggle the fancy error lines             |
-| v    | \<leader>r    | lua require("renamer").rename()                 | Rename                                   |
-| v    | \<F3>         | lua require("lsp_lines").toggle()               | Toggle LSP lines                         |
 
 ## Contributing
  
