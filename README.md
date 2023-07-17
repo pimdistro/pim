@@ -5,6 +5,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/therealnv6/pim/main/.assets/screenshot-01.png" alt="pim logo">
 </p>
+> font is [monoid Nerd Font](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/Monoid)
 
 pim was my personal answer to the question of my personal preferences; minimalism or ease of us. Why not both? 
 pim makes it easy to make amazing Neovim using experiences, without sacrificing performance, mainly because
