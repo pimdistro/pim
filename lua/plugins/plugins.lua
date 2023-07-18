@@ -42,7 +42,6 @@ require("lazy").setup({
   "lukas-reineke/lsp-format.nvim",
   "nvim-lua/plenary.nvim",
 
-  require("plugins.config.bar"),
   require("plugins.config.cmp"),
   require("custom.plugins"),
 })
