@@ -25,6 +25,8 @@ end
 require("plugins.plugins")
 require("options")
 
+require("custom.init")
+
 -- call this as last to ensure everything is loaded.
 -- probably not required for most things, but just in case.
 util.load_config()
