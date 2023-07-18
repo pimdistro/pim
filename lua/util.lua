@@ -59,49 +59,25 @@ val.map_keybindings = function(mode, bindings)
   end
 end
 
+local function confirm(message)
+  local response = vim.fn.input(message .. " (Y/n): ")
+  return response:lower() == "y"
+end
+
+local function cloneRepository(url, path)
+  print("\nCloning default configuration...")
+  vim.fn.system({ "git", "clone", "--depth", "1", url, path })
+  vim.fn.delete(path .. "/.git", "rf")
+  print("Cloned! Enjoy pim")
+end
+
 val.generate_files = function(url)
-  if not vim.api.nvim_get_runtime_file("lua/custom/init.lua", false)[1] then
-    local Menu = require("nui.menu")
-    local menu = Menu({
-      position = "50%",
-      size = {
-        width = 25,
-        height = 5,
-      },
-      border = {
-        style = "single",
-        text = {
-          top = "[Setup Default Config?]",
-          top_align = "center",
-        },
-      },
-      win_options = {
-        winhighlight = "Normal:Normal,FloatBorder:Normal",
-      },
-    }, {
-      lines = {
-        Menu.item("Yes (Y)"),
-        Menu.item("No (n)"),
-      },
-      max_width = 20,
-      keymap = {
-        focus_next = { "j", "<Down>", "<Tab>" },
-        focus_prev = { "k", "<Up>", "<S-Tab>" },
-        close = { "<Esc>", "<C-c>" },
-        submit = { "<CR>", "<Space>" },
-      },
-      on_submit = function(item)
-        local input = item.text
-        local path = vim.fn.stdpath("config") .. "/lua/custom/"
+  local configPath = vim.fn.stdpath("config") .. "/lua/custom/"
 
-        if input == "Yes (Y)" then
-          vim.fn.system({ "git", "clone", "--depth", "1", url, path })
-          vim.fn.delete(path .. ".git", "rf")
-        end
-      end,
-    })
-
-    menu:mount()
+  if not vim.fn.isdirectory(configPath) then
+    if next(vim.api.nvim_list_uis()) and confirm("Do you want to install example custom config?") then
+      cloneRepository(url, configPath)
+    end
   end
 end
 
