@@ -59,13 +59,13 @@ val.map_keybindings = function(mode, bindings)
   end
 end
 
-val.generate_files = function(url)
+val.generate_files = function(url, type, target)
   if not vim.api.nvim_get_runtime_file("lua/custom/init.lua", false)[1] then
-    local path = vim.fn.stdpath("config") .. "/lua/custom/"
+    local path = vim.fn.stdpath("config") .. target
     local input = "y"
 
     if next(vim.api.nvim_list_uis()) then
-      input = vim.fn.input("Do you want to install example custom config? (Y/n): ")
+      input = vim.fn.input("Do you want to install example custom " .. type .. " ? (Y/n): ")
     end
 
     if input == "y" then

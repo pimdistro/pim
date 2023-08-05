@@ -18,7 +18,8 @@ local path = vim.fn.stdpath("config") .. "/lua/custom/init.lua"
 local util = require("util")
 
 if not vim.loop.fs_stat(path) then
-  util.generate_files("https://github.com/pimdistro/default")
+  util.generate_files("https://github.com/pimdistro/default", "config", "/lua/custom/")
+  util.generate_files("https://github.com/pimdistro/colors", "colors", "/colors/")
 end
 
 -- here we will include the plugins directory, so we can actually initialize the plugins
