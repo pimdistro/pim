@@ -64,15 +64,13 @@ val.generate_files = function(url, type, target)
   local input = "y"
 
   if next(vim.api.nvim_list_uis()) then
-    input = vim.fn.input("Do you want to install example custom " .. type .. " ? (Y/n): ")
+    input = vim.fn.input("Do you want to install example custom " .. type .. " ? (Y/n): ", "y")
   end
 
   if input == "y" then
     vim.fn.system({ "git", "clone", "--depth", "1", url, path })
     vim.fn.delete(path .. ".git", "rf")
   end
-
-  print("Enjoy your Pim experience!")
 end
 
 return val
